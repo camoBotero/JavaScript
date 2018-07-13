@@ -14,6 +14,21 @@ app.controller('ctrlMain', function($scope, rest){
 	dg.calcular = function(num1, num2){
 		dg.resultado = num1*num2;
 	}
+
+	dg.resdata = [];
+	dg.tmultiplicar = function(numero){
+		multiplicar(numero);
+	}
+
+	function multiplicar(numero){
+		dg.resdata = [];
+		var rango = 10;
+		for (var i = 1; i <= rango; i++) {
+			dg.resdata.push({"a":numero, "b":i, "c":numero*i});
+		}
+
+		console.log(dg.resdata)
+	}
 })
 
 .service('rest', function($http){
