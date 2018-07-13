@@ -22,6 +22,8 @@ function login(){
 	//document.write('Usuario: ' + usuario + ' Password: ' + password);
 	var u = document.getElementById('user');
 	u.innerHTML = 'Usuario: ' + usuario + ' Password: ' + password;
+
+	akhsdfkha
 }
 
 
