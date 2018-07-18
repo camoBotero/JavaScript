@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arreglos</title>
+	<meta charset="utf-8">
+</head>
+<body ng-app="app" ng-controller="ctrlMain as ctrl">
+	<!--<input type="text" name="nombre">
+	<input type="text" name="apellido">
+	<input type="text" name="cedula">
+	<input type="text" name="telefono">
+	<input type="text" name="estado">-->
+
+	<p id="resultado">
+		
+	</p>
+
+	<table border="1">
+		<tr>
+			<td>Nombre:</td><td id="nom"></td>
+			<td>Apellido:</td><td id="ape"></td>
+			<td>Cedula:</td><td id="ced"></td>
+			<td>Telefono:</td><td id="tel"></td>
+			<td>Estado:</td><td><select>
+								  <option value="F">Falso</option>
+								  <option value="V">Verdadero</option>								  
+								</select></td>
+		</tr>
+	</table>
+
+	
+	<button ng-click="ctrl.tObjetos()">Objetos</button>
+	
+	<div ng-repeat="data in ctrl.miArreglo">
+		Persona: {{data.nombre}} <br>
+	</div>
+
+
+
+	<!--<script type="text/javascript" src="arrays.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>	
+	<script src="main1.js"></script>
+</body>
+</html>
