@@ -4,7 +4,7 @@
 	<title>Arreglos</title>
 	<meta charset="utf-8">
 </head>
-<body ng-app="app" ng-controller="ctrlMain as ctrl">
+<body ng-app="app" ng-controller="ctrlMain as con">
 	<!--<input type="text" name="nombre">
 	<input type="text" name="apellido">
 	<input type="text" name="cedula">
@@ -29,10 +29,10 @@
 	</table>
 
 	
-	<button ng-click="ctrl.tObjetos()">Objetos</button>
+	<button ng-click="con.tObjetos()">Objetos</button>
 	
-	<div ng-repeat="data in ctrl.miArreglo">
-		Persona: {{data.nombre}} <br>
+	<div ng-repeat="data in con.miArreglo">
+		Persona: {{data.nombre} {data.apellido}} <br>
 	</div>
 
 

@@ -13,28 +13,16 @@ app.controller('ctrlMain', function($scope, rest){
 	var dg = this;
 	dg.resultado = 0;
 
-	dg.persona = new Object();
-	dg.persona.nombre;
-	dg.persona.apellido;
-	dg.persona.cedula ;
-	dg.persona.telefono;
-	dg.persona.estado;
-	
+
 	dg.miArreglo = [];
 	dg.tObjetos = function(){
 		//var arreglo = new Array();		
-		for (var i = 0; i < 2; i++) {			
-			dg.persona.nombre = dg.cadAleatoria();			
-			dg.persona.apellido = dg.cadAleatoria();
-			dg.persona.cedula = dg.numAleatorio (10000000, 99999999);
-			dg.persona.telefono = dg.numAleatorio(1000000, 9999999);
-			dg.persona.estado = "F";			
-			/*res.innerHTML += "<br>" + "Nombre: " + persona["nombre"] +
-			                          " Apellido: " + persona["apellido"] +
-			                          " Cedula: " + persona["cedula"] +
-			                          " Telefono: " + persona["telefono"];*/			
-			dg.miArreglo.push(dg.persona);			
+		for (var i = 0; i < 2; i++) {
+			dg.miArreglo.push({nombre: dg.cadAleatoria(), apellido: dg.cadAleatoria(), cedula:dg.numAleatorio (10000000, 99999999), 
+				telefono:dg.numAleatorio (10000000, 99999999), estado: true });		
 		}
+
+		console.log(dg.miArreglo);
 	}
 
 	/*function multiplicar(numero){
