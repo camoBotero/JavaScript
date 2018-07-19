@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplicador JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Multiplicador en JavaScript</h1>
+	Elige un numero para obtener su tabla: <input type="number" id="num" size="5">
+	<br>	
+	<textarea id="v" rows="1" cols="30"></textarea><br>
+	<input type="submit" value="Calcular" onclick="multiplicar(num.value);">
+	
+	<p id="res">
+		
+	</p>
+	<br>
+	<table>
+		<tr>
+			<td>Usuario:</td>
+			<td><input type="text" id="user" size="10"></td>	
+		</tr>
+		<tr>
+			<td>Password: </td>
+			<td><input type="password" id="pass" size="10"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Validar" onclick="validaDatos();"></td>
+		</tr>
+	</table>
+	<div id=result>
+		
+	</div>
+
+
+	<script type="text/javascript" src="multiplicador.js"></script>
+</body>
+</html>
